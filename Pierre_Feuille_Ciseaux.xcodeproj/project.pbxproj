@@ -15,6 +15,13 @@
 		BE89FCD920F4B26C002E230D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE89FCD720F4B26C002E230D /* LaunchScreen.storyboard */; };
 		BE89FCE420F4B26C002E230D /* Pierre_Feuille_CiseauxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89FCE320F4B26C002E230D /* Pierre_Feuille_CiseauxTests.swift */; };
 		BE89FCEF20F4B26C002E230D /* Pierre_Feuille_CiseauxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89FCEE20F4B26C002E230D /* Pierre_Feuille_CiseauxUITests.swift */; };
+		BE89FCFE20F4E269002E230D /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89FCFC20F4E269002E230D /* FightViewController.swift */; };
+		BE89FCFF20F4E269002E230D /* FightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE89FCFD20F4E269002E230D /* FightViewController.xib */; };
+		BE89FD0120F4E84B002E230D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89FD0020F4E84B002E230D /* Player.swift */; };
+		BE89FD1020F5404E002E230D /* InteruptGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89FD0E20F5404E002E230D /* InteruptGameViewController.swift */; };
+		BE89FD1120F5404E002E230D /* InteruptGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE89FD0F20F5404E002E230D /* InteruptGameViewController.xib */; };
+		BE89FD1520F54A6D002E230D /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89FD1320F54A6D002E230D /* GameTableViewCell.swift */; };
+		BE89FD1620F54A6D002E230D /* GameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE89FD1420F54A6D002E230D /* GameTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		BE89FCEA20F4B26C002E230D /* Pierre_Feuille_CiseauxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pierre_Feuille_CiseauxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE89FCEE20F4B26C002E230D /* Pierre_Feuille_CiseauxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxUITests.swift; sourceTree = "<group>"; };
 		BE89FCF020F4B26C002E230D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE89FCFC20F4E269002E230D /* FightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
+		BE89FCFD20F4E269002E230D /* FightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FightViewController.xib; sourceTree = "<group>"; };
+		BE89FD0020F4E84B002E230D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		BE89FD0E20F5404E002E230D /* InteruptGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteruptGameViewController.swift; sourceTree = "<group>"; };
+		BE89FD0F20F5404E002E230D /* InteruptGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InteruptGameViewController.xib; sourceTree = "<group>"; };
+		BE89FD1320F54A6D002E230D /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		BE89FD1420F54A6D002E230D /* GameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,10 @@
 		BE89FCCA20F4B26C002E230D /* Pierre_Feuille_Ciseaux */ = {
 			isa = PBXGroup;
 			children = (
+				BE89FD1220F54A40002E230D /* Cell */,
+				BE89FD0720F533A4002E230D /* object */,
+				BE89FD0620F53369002E230D /* viewController */,
 				BE89FCCB20F4B26C002E230D /* AppDelegate.swift */,
-				BE89FCCD20F4B26C002E230D /* ViewController.swift */,
-				BE89FCCF20F4B26C002E230D /* Main.storyboard */,
 				BE89FCD520F4B26C002E230D /* Assets.xcassets */,
 				BE89FCD720F4B26C002E230D /* LaunchScreen.storyboard */,
 				BE89FCDA20F4B26C002E230D /* Info.plist */,
@@ -126,6 +141,36 @@
 				BE89FCF020F4B26C002E230D /* Info.plist */,
 			);
 			path = Pierre_Feuille_CiseauxUITests;
+			sourceTree = "<group>";
+		};
+		BE89FD0620F53369002E230D /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				BE89FCCD20F4B26C002E230D /* ViewController.swift */,
+				BE89FCCF20F4B26C002E230D /* Main.storyboard */,
+				BE89FCFC20F4E269002E230D /* FightViewController.swift */,
+				BE89FCFD20F4E269002E230D /* FightViewController.xib */,
+				BE89FD0E20F5404E002E230D /* InteruptGameViewController.swift */,
+				BE89FD0F20F5404E002E230D /* InteruptGameViewController.xib */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		BE89FD0720F533A4002E230D /* object */ = {
+			isa = PBXGroup;
+			children = (
+				BE89FD0020F4E84B002E230D /* Player.swift */,
+			);
+			path = object;
+			sourceTree = "<group>";
+		};
+		BE89FD1220F54A40002E230D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BE89FD1320F54A6D002E230D /* GameTableViewCell.swift */,
+				BE89FD1420F54A6D002E230D /* GameTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +235,11 @@
 		BE89FCC020F4B26C002E230D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+					2,
+					pvp,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Erwan seveno";
@@ -236,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE89FCD920F4B26C002E230D /* LaunchScreen.storyboard in Resources */,
+				BE89FD1120F5404E002E230D /* InteruptGameViewController.xib in Resources */,
+				BE89FCFF20F4E269002E230D /* FightViewController.xib in Resources */,
 				BE89FCD620F4B26C002E230D /* Assets.xcassets in Resources */,
 				BE89FCD120F4B26C002E230D /* Main.storyboard in Resources */,
+				BE89FD1620F54A6D002E230D /* GameTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE89FD1520F54A6D002E230D /* GameTableViewCell.swift in Sources */,
+				BE89FD1020F5404E002E230D /* InteruptGameViewController.swift in Sources */,
 				BE89FCD420F4B26C002E230D /* Pierre_Feuille_Ciseaux.xcdatamodeld in Sources */,
+				BE89FCFE20F4E269002E230D /* FightViewController.swift in Sources */,
 				BE89FCCE20F4B26C002E230D /* ViewController.swift in Sources */,
+				BE89FD0120F4E84B002E230D /* Player.swift in Sources */,
 				BE89FCCC20F4B26C002E230D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,13 +488,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2W27857XP9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Pierre_Feuille_Ciseaux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "erwan.Pierre-Feuille-Ciseaux";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,13 +503,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2W27857XP9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Pierre_Feuille_Ciseaux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "erwan.Pierre-Feuille-Ciseaux";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
